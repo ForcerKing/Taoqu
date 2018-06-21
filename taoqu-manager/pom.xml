@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.taoqu</groupId>
+		<artifactId>taoqu-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
+	<artifactId>taoqu-manager</artifactId>
+	<packaging>pom</packaging>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.taoqu</groupId>
+			<artifactId>taoqu-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
+	<!-- 将以下四个项目作为Maven module添加进taoqu-manager中，虽然在工程目录结构上看
+	下面的四个模块看似是四个独立的工程，但是它们和其他独立的Maven工程不一样的地方在于：
+	它们被视为taoqu-manager的一部分，因此，它们不需要被单独地Maven intall到本地仓库，
+	构建taoqu-manager的时候，这四个模块就会被自动构建 -->
+	<modules>
+		<module>taoqu-manager-pojo</module>
+		<module>taoqu-magager-mapper</module>
+		<module>taoqu-manager-service</module>
+		<module>taoqu-manager-web</module>
+	</modules>
+
+	<!-- 配置Tomcat插件 -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<configuration>
+					<port>8080</port>
+					<path>/</path>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

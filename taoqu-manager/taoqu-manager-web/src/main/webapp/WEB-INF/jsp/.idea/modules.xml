@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../js/.idea/js.iml" filepath="$PROJECT_DIR$/../js/.idea/js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jsp.iml" filepath="$PROJECT_DIR$/.idea/jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../../taoqu-magager-mapper/src/main/java/com/taoqu/mapper/.idea/mapper.iml" filepath="$PROJECT_DIR$/../../../../../../taoqu-magager-mapper/src/main/java/com/taoqu/mapper/.idea/mapper.iml" />
+    </modules>
+  </component>
+</project>

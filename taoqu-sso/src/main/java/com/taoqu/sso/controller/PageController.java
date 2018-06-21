@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.taoqu.sso.controller;
 
 import org.springframework.stereotype.Controller;
@@ -11,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * 2018年6月5日
  * PageController.java
  * @author xushaoqun
- * desc:页面跳转
+ * desc:页面跳转控制器
  */
 @Controller
 @RequestMapping("/page")

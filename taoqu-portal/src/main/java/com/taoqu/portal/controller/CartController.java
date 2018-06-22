@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.taoqu.portal.controller;
 
 import java.util.List;
